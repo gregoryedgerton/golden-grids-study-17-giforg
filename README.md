@@ -119,6 +119,9 @@ has been reviewed.
 - **Order.** A grid gives its first cell the most room, so the order of cells
   is an editorial ranking the reference makes with position alone. Text-only
   stories are set in the larger squares so their headlines can be read.
+- **Dates.** A story carries a date only where the reference showed one (its
+  News page and the report). The home page shows none, so those stories have
+  none here.
 - **Left out.** The local headlines (they follow the reader's location), the
   sponsor messages, the station finder, two stories on suicide and a shooting,
   the quiz, and the right-hand column.

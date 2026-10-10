@@ -40,7 +40,7 @@ function Detail({ s }: { s: Story }) {
       <Slug s={s} />
       <p className="detail__lead">{s.title}</p>
       {s.teaser && <p className="detail__teaser">{s.teaser}</p>}
-      <p className="detail__meta">{s.date}{s.audio ? <> · <Audio t={s.audio} /></> : null}</p>
+      {(s.date || s.audio) && <p className="detail__meta">{s.date}{s.date && s.audio ? " · " : null}{s.audio ? <Audio t={s.audio} /> : null}</p>}
       {s.href && <p><a className="btn" href={s.href}>Read the story</a></p>}
       <p className="note">Restated from the headline and summary the reference gave this story. The report itself is not reproduced here.</p>
     </div>

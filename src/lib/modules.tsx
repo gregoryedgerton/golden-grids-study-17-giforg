@@ -47,7 +47,7 @@ export function Results({ q, list }: { q: string; list: Story[] }) {
             <li key={s.id}>
               <p className="slug"><span className="slug__name">{s.slug}</span></p>
               <p className="results__title">{s.href ? <a href={s.href}>{s.title}</a> : s.title}</p>
-              {s.teaser && <p className="results__teaser">{s.date} · {s.teaser}</p>}
+              {s.teaser && <p className="results__teaser">{s.date ? `${s.date} · ` : ""}{s.teaser}</p>}
             </li>
           ))}
         </ul>
