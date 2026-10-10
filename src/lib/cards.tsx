@@ -63,7 +63,7 @@ export function NewsCard({ s, x, slotKey }: { s: Story; x: ExpandGroup; slotKey:
         <div className="card__media">
           <Pic k={s.photo} />
           <button className="media__open" {...x.triggerProps(slotKey)}><span className="visually-hidden">More: {s.title}</span></button>
-          <span className="card__pill" aria-hidden="true">{s.slug}</span>
+          <span className={`card__pill${s.slug.includes("GIF.org") ? " card__pill--cased" : ""}`} aria-hidden="true">{s.slug}</span>
         </div>
         <div className="card__text">
           <Slug s={s} />
