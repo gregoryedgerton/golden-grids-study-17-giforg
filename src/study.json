@@ -1,0 +1,66 @@
+{
+  "number": "17",
+  "name": "NPR",
+  "brand": "GIF.org",
+  "notice": "A layout study, not NPR: its home page, its News page and one report rebuilt with Golden Grids as GIF.org, a parody name. Not affiliated with NPR; the news is NPR's of October 10, 2026, restated and not quoted, and nothing here is broadcast, sent or collected.",
+  "pages": {
+    "index": "Home",
+    "news": "News",
+    "story": "A report"
+  },
+  "summary": "The home page of npr.org, its News page and one report (on lawsuits over GLP-1 drugs), rebuilt as stacked golden grids, with the type on each card scaled to the square it sits in.",
+  "reviewed": {
+    "date": "October 10, 2026",
+    "method": "Read in a desktop browser at 1,280 pixels wide, signed out, with text and computed styles taken from the pages. No screenshot of the reference is kept or published. The home page's local headlines, which follow the reader's location, were left out.",
+    "pages": [
+      {
+        "label": "Home page",
+        "url": "https://www.npr.org/"
+      },
+      {
+        "label": "News",
+        "url": "https://www.npr.org/sections/news/"
+      },
+      {
+        "label": "The report on lawsuits over GLP-1 drugs",
+        "url": "https://www.npr.org/2026/10/10/nx-s1-5996652/glp1-fda-naion-blind-lawsuit-ozempic"
+      }
+    ]
+  },
+  "real": [
+    "The news. Every story was on NPR's home page or News page on October 10, 2026, and what is said of each is what NPR's headline and summary said. Public figures and organizations are named as NPR named them.",
+    "The report: its subject, its figures (from Gallup, the FDA's database and the plaintiffs' attorney) and the positions of the companies, the agency and the medical societies, as NPR reported them. It was reported by Yuki Noguchi, with Sydney Lupkin contributing.",
+    "The shape of each page: the header and its items, the order and grouping of the stories, the sections' names, the audio lengths and the footer's lists."
+  ],
+  "invented": [
+    "The name. GIF.org is a parody name made for this study; it is not a newsroom, a broadcaster or a charity. Where the copy says GIF.org found, was told or reports something, NPR did. The paid tier is played as GIF.org+.",
+    "Every sentence. Headlines and summaries are restated in the study's own words and nothing is quoted. The report is a shorter restatement without its quotations, and the private people in it are not named.",
+    "The names of NPR's programs, which are replaced by plain section names (Life Advice, Science Podcast, Photography, Economy).",
+    "The byline, the read-aloud control (which uses the browser's own voice), the search, the newsletter form and the donation tile, none of which sends or collects anything.",
+    "The dark colour scheme, which the reference does not have."
+  ],
+  "assets": [
+    {
+      "what": "Photographs",
+      "source": "Unsplash photographers and NASA, each credited below and beside the photograph when it is opened. None is NPR's or a news agency's, and none shows the event, the person or the place a story is about",
+      "url": "https://unsplash.com/license",
+      "licence": "Unsplash License (free to use; not a Creative Commons licence); two NASA images in the public domain, from Wikimedia Commons"
+    },
+    {
+      "what": "Icons and the mark",
+      "source": "Drawn for the study; the three blocks are not the reference's logo"
+    },
+    {
+      "what": "Text",
+      "source": "The study's own restatement of NPR's headlines, summaries and one report"
+    },
+    {
+      "what": "Typefaces",
+      "source": "Inter and Source Serif 4, standing in for the reference's own",
+      "licence": "SIL Open Font License"
+    }
+  ],
+  "owner": "NPR (National Public Radio), its member stations, or any person or organization in the news",
+  "repo": "https://github.com/gregoryedgerton/golden-grids-study-17-npr",
+  "updated": "October 10, 2026"
+}
