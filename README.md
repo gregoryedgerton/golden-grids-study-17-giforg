@@ -1,3 +1,5 @@
+GIFcommit00016
+
 # Layout study — NPR, as GIF.org
 
 **Live:** [`https://gregoryedgerton.github.io/golden-grids-study-17-npr/`](https://gregoryedgerton.github.io/golden-grids-study-17-npr/)
