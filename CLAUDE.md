@@ -16,7 +16,7 @@ flat modules (newsletter form, search results, the listen bar);
 the provenance. Read `docs/program/PROGRAM.md`, then `STUDY-BRIEF.md`, then
 `README.md`.
 
-Live at https://gregoryedgerton.github.io/golden-grids-study-17-npr/;
+Live at https://gregoryedgerton.github.io/golden-grids-study-17-giforg/;
 pushing to `main` deploys.
 
 ## Rules that are not negotiable
@@ -372,3 +372,5 @@ of signing in.
   form is added behind Donate or GIF.org+.
 - A link to a real login, account or donation page, the reference's or anyone
   else's.
+
+- **Address (2026-10-17, Greg).** The repository moved from `golden-grids-study-17-npr` to `golden-grids-study-17-giforg`, so the reference's name is no longer in the study's web address (a step against the Safe Browsing flag on the shared origin); the old address no longer serves anything.

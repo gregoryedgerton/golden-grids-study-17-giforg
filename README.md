@@ -2,7 +2,7 @@ GIFcommit00016
 
 # Layout study — NPR, as GIF.org
 
-**Live:** [`https://gregoryedgerton.github.io/golden-grids-study-17-npr/`](https://gregoryedgerton.github.io/golden-grids-study-17-npr/)
+**Live:** [`https://gregoryedgerton.github.io/golden-grids-study-17-giforg/`](https://gregoryedgerton.github.io/golden-grids-study-17-giforg/)
 
 An unaffiliated layout study. It rebuilds three pages of
 [npr.org](https://www.npr.org/) (the home page, the News page and one report)
@@ -150,3 +150,5 @@ NODE_PATH=<a node_modules with playwright> node captures/scan.cjs http://localho
 ```
 
 Pushing to `main` deploys to GitHub Pages.
+
+- **Address (2026-10-17, Greg).** The repository moved from `golden-grids-study-17-npr` to `golden-grids-study-17-giforg`, so the reference's name is no longer in the study's web address (a step against the Safe Browsing flag on the shared origin); the old address no longer serves anything.
