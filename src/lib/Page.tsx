@@ -8,7 +8,7 @@ import { useFontsReady } from "./fonts";
 
 /**
  * The shell, after the reference's: a white bar with the mark at the left,
- * four small capital links (newsletters, sign in, the shop, the paid tier)
+ * three small capital links (newsletters, the shop, the paid tier)
  * and a red Donate; under it a grey bar of News, Culture, Music, Podcasts &
  * Shows and Search; a footer of four lists and the legal line. The items are
  * the reference's, for show; News is the study's own page and the search
@@ -16,7 +16,7 @@ import { useFontsReady } from "./fonts";
  * reference: its pages are linked only from the notice and the disclosure.
  */
 const NAV_ICON: Record<string, IconName> = { News: "news", Culture: "culture", Music: "music", "Podcasts & Shows": "headphones" };
-const UTIL_ICON: Record<string, IconName> = { Newsletters: "mail", "Sign In": "user", "GIF.org Shop": "bag", "Get GIF.org+": "plus" };
+const UTIL_ICON: Record<string, IconName> = { Newsletters: "mail", "GIF.org Shop": "bag", "Get GIF.org+": "plus" };
 
 /** The mark: G, I and F on three blocks, then the rest of the name. */
 export function Mark() {

@@ -22,8 +22,10 @@ export const REFERENCE = {
   story: { label: "npr.org, the report on lawsuits over GLP-1 drugs", url: "https://www.npr.org/2026/10/10/nx-s1-5996652/glp1-fda-naion-blind-lawsuit-ozempic" },
 } as const;
 
-/** The header's items: the reference's own, for show, with the study's pages as links. */
-export const UTIL = ["Newsletters", "Sign In", "GIF.org Shop", "Get GIF.org+"]; // written in the case they are shown in: the name is never transformed
+/** The header's items: the reference's own, for show, with the study's pages as links.
+ *  The reference's Sign In is left out: a sign-in label in a brand's header reads as
+ *  phishing to Safe Browsing. */
+export const UTIL = ["Newsletters", "GIF.org Shop", "Get GIF.org+"]; // written in the case they are shown in: the name is never transformed
 export const NAV: { label: string; href?: string }[] = [
   { label: "News", href: PAGES.news }, { label: "Culture" }, { label: "Music" }, { label: "Podcasts & Shows" },
 ];

@@ -131,8 +131,9 @@ has been reviewed.
   under 12px and no axe violations in Chrome and WebKit at 390, 820 and 1440,
   light and dark; `captures/cells.cjs` opens every square at 390. No
   screen-reader user has tested it.
-- **Not rebuilt.** The menus under each section, sign-in, the audio player and
-  playlist, the story pages other than one.
+- **Not rebuilt.** The menus under each section, sign-in (the header leaves
+  out the reference's Sign In item), the audio player and playlist, the story
+  pages other than one.
 
 ## Disclosure
 

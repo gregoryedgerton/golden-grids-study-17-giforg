@@ -339,3 +339,36 @@ opened in StackBlitz at `https://stackblitz.com/~/github.com/gregoryedgerton/gol
 - Do not append `?file=` to the `~/github.com` link; it made the IDE fail to
   start in testing. The classic `/github/` importer accepts `?file=` but waits
   on a WebSocket and can stall at "Cloning repo from GitHub".
+
+## Safe Browsing remediation (2026-10)
+
+On 2026-10-17 Google Safe Browsing flagged the whole origin,
+gregoryedgerton.github.io, as social engineering: every study and the
+marketing site. The first trigger was the demo bank sign-in in Study 19
+(GIFbank), since removed. The heuristic reads appearance, not behaviour, and a
+brand-styled header with a sign-in label adds to the signal even when the
+label does nothing, so every study drops whatever looks like signing in or
+collecting personal data. "Account matter" in the standard above stops short
+of signing in.
+
+**What changed here**
+- The header's small capital links no longer include Sign In (`UTIL` in
+  `src/content.ts`, `UTIL_ICON` in `src/lib/Page.tsx`); Newsletters, GIF.org
+  Shop and Get GIF.org+ remain, then the red Donate. The `user` icon stays in
+  the shared set, unused.
+- Checked, unchanged: Get GIF.org+, Donate and the Donate tile are plain
+  text and lead to no donation or payment form (the tile says GIF.org takes no
+  donations). The newsletter's email field keeps `autoComplete="off"` and
+  says nothing was sent.
+
+**Never bring back**
+- A sign-in, log-in, sign-up or create-account control or label, in the
+  header or anywhere else, even as plain text for show.
+- A user name, password or verification field, or an input that autofills
+  personal data (`autoComplete` of `email`, `name`, `given-name`,
+  `family-name`, `tel`, `street-address`, `postal-code` or `cc-*`). The
+  newsletter's email field carries `autoComplete="off"`, sends nothing and
+  says so; no other field takes personal data, and no donation or payment
+  form is added behind Donate or GIF.org+.
+- A link to a real login, account or donation page, the reference's or anyone
+  else's.
